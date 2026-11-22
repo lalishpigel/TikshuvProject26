@@ -1,51 +1,75 @@
-#  School Trip Management System
+# School Trip Management System
 
-מערכת לניהול טיול שנתי הכוללת:
-- הרשמת תלמידים ומורים
-- התחברות לפי ת"ז
-- הרשאת מורים עם קוד כניסה
-- שליפות API למורים בלבד
-- עדכון מיקומים בזמן אמת (סימולציה)
-- מפה חיה של כל המשתתפים
+A web-based system for managing annual school trips, providing tools for student and teacher registration, access control, and real-time participant location tracking.
 
+## Features
 
-הנחות:
-מספר זהות מאפשר כניסה- כדי לוותר על סיסמא בכל כניסה...
+- Student and teacher registration.
+- Login using a national ID number.
+- Teacher authentication using an access code.
+- Teacher-only API endpoints and data access.
+- Real-time location updates (simulated).
+- Live map displaying the locations of all trip participants.
+
+## Design Assumptions
+
+- **Passwordless login:** National ID numbers are used for login to simplify the sign-in process and avoid requiring users to enter a password each time.
+- **Role-based access:** Teachers have additional permissions and access to protected information through a dedicated access code.
+
 ---
 
-#  טכנולוגיות
+## Technologies Used
 
-## Client (React)
+### Client (React)
 - React
 - React Router DOM
-- Leaflet (MAP)
+- Leaflet (interactive maps)
 - Fetch API
 
-## Server (Node.js)
-- Express.js
-- MySQL
-- CORS
+### Server (Node.js)
 - Node.js
+- Express.js
+- CORS
+- MySQL
 
-## Database
+### Database
+- MySQL
 - MySQL2
 
-#  הרצת הפרויקט
+---
 
-שלב 1- הרצת צד שרת:
+## Running the Project
+
+### Step 1 – Start the Server
+
+```bash
 cd server
+npm install
 npm run dev
+```
 
-שלב 2- הרצת צד לקוח:
+### Step 2 – Start the Client
+
+Open a separate terminal:
+
+```bash
 cd client
+npm install
 npm run dev
+```
 
-צילומי מסך שונים:
+Once both services are running, open the local URL provided by Vite in your browser.
 
-![alt text](image.png)
+---
 
-![alt text](image-1.png)
+## Screenshots
 
-![alt text](image-2.png)
+### Application Screenshots
 
-![alt text](image-3.png)
+![Application Screenshot](image.png)
+
+![Application Screenshot](image-1.png)
+
+![Application Screenshot](image-2.png)
+
+![Application Screenshot](image-3.png)
