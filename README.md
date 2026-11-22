@@ -59,17 +59,3 @@ npm run dev
 ```
 
 Once both services are running, open the local URL provided by Vite in your browser.
-
----
-
-## Screenshots
-
-### Application Screenshots
-
-![Application Screenshot](image.png)
-
-![Application Screenshot](image-1.png)
-
-![Application Screenshot](image-2.png)
-
-![Application Screenshot](image-3.png)
